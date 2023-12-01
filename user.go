@@ -1,9 +1,14 @@
-// user_store.go
 package main
 
 import (
 	"sync"
 )
+
+type User struct {
+	ID       string `json:"id"`
+	Username string `json:"username"`
+	Avatar   string `json:"avatar"`
+}
 
 type UserStore interface {
 	Store(userID string, user User)

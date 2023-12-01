@@ -1,4 +1,3 @@
-// connection_store.go
 package main
 
 import (
